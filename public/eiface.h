@@ -1,4 +1,4 @@
-//===== Copyright © 1996-2005, Valve Corporation, All rights reserved. ======//
+//===== Copyright ï¿½ 1996-2005, Valve Corporation, All rights reserved. ======//
 //
 // Purpose: 
 //
@@ -341,6 +341,8 @@ public:
 	// Tells the engine we can immdiately re-use all edict indices
 	// even though we may not have waited enough time
 	virtual void			AllowImmediateEdictReuse( ) = 0;
+
+	virtual bool IsInternalBuild( void ) = 0;
 
 	virtual IChangeInfoAccessor *GetChangeAccessor( const edict_t *pEdict ) = 0;	
 
