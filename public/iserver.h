@@ -13,7 +13,7 @@
 #include <inetmsghandler.h>
 #include <bitvec.h>
 #include <const.h>
-#include <netadr.h>
+//#include <netadr.h>
 
 class INetMessage;
 class IRecipientFilter;
@@ -32,7 +32,7 @@ public:
 	virtual int		GetMaxClients( void ) const = 0; // returns current client limit
 	virtual IClient	*GetClient( int index ) = 0; // returns interface to client 
 	virtual int		GetClientCount() const = 0; // returns number of clients slots (used & unused)
-	virtual netadr_t GetPublicAddress() = 0;
+//	virtual netadr_t GetPublicAddress() = 0;
 	virtual bool		IsUsingFakeIP( void ) const = 0;
 	virtual int		GetLocalUDPPort( void ) const = 0; // returns current used UDP port
 	virtual float	GetTime( void ) const = 0;	// returns game world time
