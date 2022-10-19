@@ -342,6 +342,9 @@ public:
 	// even though we may not have waited enough time
 	virtual void			AllowImmediateEdictReuse( ) = 0;
 
+	// Needed for OF/TF2C
+	virtual bool IsInternalBuild( void ) = 0;
+
 	virtual IChangeInfoAccessor *GetChangeAccessor( const edict_t *pEdict ) = 0;	
 
 	// Name of most recently load .sav file
